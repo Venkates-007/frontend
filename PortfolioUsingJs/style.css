@@ -1,0 +1,300 @@
+/*
+*use the universal selector to apply the css properties for the all the html elements
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+* provide the background color and the color css property to the body tag
+*/
+
+body {
+  background-color: black;
+  color: white;
+}
+#header {
+  
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  display: block;
+  padding: 10px 10%;
+  margin: 10px 10%;
+  
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo{
+ 
+  font-weight: bold;
+ 
+  font-size: 30px;
+  padding-bottom: 100px;
+}
+.logo::first-letter{
+  color: rgba(190, 48, 48, 0.6);
+}
+.hero{
+  display: flex;
+ padding: 50px;
+ justify-content: space-evenly;
+ align-items: center;
+ 
+}
+
+.left p{
+  font-size: 25px;
+  font-weight: bold;
+  color:rgba(103, 37, 37,0.8);
+}
+.pict{
+  width: 100%;
+  height:400px;
+  background:
+url('https://images.unsplash.com/photo-1501959181532-7d2a3c064642?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D') no-repeat;
+background-size: 100%,500px;
+}
+nav #sidemenu{
+  display: flex;
+  padding-bottom: 100px; 
+}
+#sidemenu li {
+ 
+  list-style: none;
+  margin: 10px 20px;
+  list-style-type: none;
+}
+ #sidemenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+ 
+}
+
+ #sidemenu li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+#sidemenu li a:hover::after {
+  width: 100%;
+}
+ul{
+  list-style-type: none;
+
+}
+a{
+  text-decoration: none;
+ 
+}
+
+
+/*------------About---------*/
+.row {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  
+  
+}
+
+ .about-col-2 p {
+  font-size: 17px;
+  text-align: justify;
+  
+} 
+.sub-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(195, 40, 167, 0.819);
+  padding: 30px;
+ 
+}
+.tab-titles {
+  display: flex;
+  margin: 20px 0px 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents ol li {
+  list-style:none ;
+  margin: 10px 0px;
+}
+.tab-contents ol li {
+  color: rgb(174, 230, 195);
+  font-size: 14px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+
+/*************Services*****************/
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10%;
+  margin: 10px 10%;
+
+}
+.services-list {
+ display: flex;
+ padding: 30px;
+ 
+}
+.services-list div {
+  
+  height: 150px;
+  width: 200px;
+  background-color: dimgray;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0s, transform 0s;
+  margin-left: 10px;
+  
+}
+.services-list div i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.services-list div h2 {
+  font-size: 20px;
+  font-weight:lighter;
+  margin-bottom: 10px;
+  display: flex;
+
+}
+.services-list div p{
+  display: none;
+}
+.services-list div a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.services-list div:hover{
+  background:rgba(57, 65, 3, 0.825);
+  transform: translateY(-10px);
+}
+
+
+/*  contact */
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 10px 5px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.5s;
+}
+.btn:hover {
+  background: #ff004f;
+}
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-left p {
+  margin-top: 30px;
+}
+.contact-left p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 10px;
+}
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #aba;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.btn.btn2 {
+  display: inline-block;
+  background: #ff004f;
+}
+.contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form .btn2 {
+  padding: 14px;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+

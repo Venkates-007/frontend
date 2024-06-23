@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venkateswarlu - Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5cb136a2f0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <p class="logo">
+            Venkateswarlu
+            </p>
+            <ul id="sidemenu" >
+              <li><a href="#h">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Projects</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          
+        </nav>
+        <div class="hero" id="h">
+        <div class="left"><p>Web Developer</p> 
+        </div>
+        <div class="pict"></div>
+        </div>
+      </div>
+    </div>
+    <!-------------------About---------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <h1 class="sub-title">About</h1>
+          </div>
+          <div class="about-col-2">
+            
+            <p>
+             I am Venkateswarlu, a self-motivated and enthusiastic fresher with a keen interest in web site development. Seeking an entry-level position as a Java developer to apply my skills and knowledge in developing software applications. I am proficient in SQL and RDBMS, as well as I had sound knowledge in JAVA. Familiar with tools such as Eclipse, SQL plus.Eager to learn new technologies and methodologies to enhance my professional growth.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ol>
+                <li><details><summary>Front-end</summary><li>HTML</li><li>CSS</li><li>Java Script</li></details></li>
+                <li><details><summary>Back-end</summary><li>Java</li><li>OOPs concepts</li><li>Collections</li></details></li>
+                <li><details><summary>Database</summary><li>Oracle-SQL</li><li> MYSQL</li></details></li>
+              </ol>
+            </div>
+            <div class="tab-contents" id="education">
+              <ol>
+                <li><details><summary>SSC</summary><pre>
+                  CGPA : 9.3
+                  Year : 2016
+                </pre></details></li>
+                <li><details><summary>DIPLOMA</summary><pre>
+                  PERCENTAGE : 76
+                  Year : 2019
+                </pre></details></li>
+                <li><details><summary>SSC</summary><pre>
+                  CGPA : 6.79
+                  Year : 2022
+                </pre></details></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------Service Tab-------------------------->
+    <div id="services">
+      <div class="title">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Amazon Clone</h2> 
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Basic Calculator</h2>
+          
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Tic Tac Toe</h2>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------------contact------------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+
+            <p><i class="fa-solid fa-envelope"></i>kavadivenkat024@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 8466992489</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+             
+            </div>
+            <a href="/images/Venkateswarlu.pdf" download class="btn btn2">download cv</a>
+          </div>
+          <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="your email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
